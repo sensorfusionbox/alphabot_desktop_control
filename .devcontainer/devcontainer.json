@@ -1,0 +1,28 @@
+{
+    "name": "alphabot_desktop_control",
+    "dockerFile": "../Dockerfile", 
+    "runArgs": [
+      "--gpus=all",
+      "--env=DISPLAY",
+      "--env=QT_X11_NO_MITSHM=1",
+      "--env=XAUTHORITY=/tmp/.docker.xauth",
+      "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
+      "--volume=/etc/group:/etc/group:ro"
+    ],
+    "remoteEnv": {
+    },
+    "postCreateCommand": [
+      "bash"
+    ],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+            "ms-python.python",
+            "ms-vscode.cpptools-extension-pack",
+            "ms-azuretools.vscode-docker",
+            "ms-vscode.cmake-tools",
+            "twxs.cmake"
+        ]
+      }
+    }
+  }
