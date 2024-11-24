@@ -16,5 +16,6 @@ SHELL ["/bin/bash", "-c"]
 USER $USERNAME
 # terminal colors with xterm
 ENV TERM xterm
+RUN echo "export ROS_DOMAIN_ID=20" >> ~/.bashrc
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 CMD ["bash"]
