@@ -3,7 +3,7 @@ FROM osrf/ros:humble-desktop-full-jammy
 
 RUN apt update && apt upgrade -y
 
-RUN apt-get update && apt-get install -y && \
+RUN apt-get update && apt-get install -y \
     ros-humble-nav2-rviz-plugins
 
 COPY ros_entrypoint.sh /ros_entrypoint.sh
