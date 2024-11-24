@@ -14,3 +14,5 @@ ros2 run rqt_graph rqt_graph
 ros2 run tf2_tools view_frames
 
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+ros2 launch launch-display.py

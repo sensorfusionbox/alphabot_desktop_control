@@ -7,7 +7,8 @@
       "--env=QT_X11_NO_MITSHM=1",
       "--env=XAUTHORITY=/tmp/.docker.xauth",
       "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
-      "--volume=/etc/group:/etc/group:ro"
+      "--volume=/etc/group:/etc/group:ro",
+      "--network=host"
     ],
     "remoteEnv": {
     },
