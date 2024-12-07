@@ -13,7 +13,7 @@
     "remoteEnv": {
     },
     "postCreateCommand": [
-      "bash"
+      "cd /workspaces/alphabot_desktop_control && source '/opt/ros/humble/setup.bash' && ros2 launch launch-display.py"
     ],
     "customizations": {
       "vscode": {

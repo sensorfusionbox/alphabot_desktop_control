@@ -27,8 +27,8 @@ def generate_launch_description():
         name='image_view',
         output='screen',
         remappings=[
-            ('image/compressed', '/camera/image_raw/compressed'),
-            ('image', '/camera/image_raw')
+            ('image/compressed', '/camera/rgb/image_raw/compressed'),
+            ('image', '/camera/rgb/image_raw')
         ],
         parameters=[{'image_transport': 'compressed'}]
     )
